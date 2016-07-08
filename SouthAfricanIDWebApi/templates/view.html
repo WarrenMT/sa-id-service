@@ -1,0 +1,23 @@
+﻿<div ng-init="view.verifyId()">
+
+    <div class="panel panel-info">
+        <div class="panel-heading">ID Number Information</div>
+        
+        <div class="panel-body">
+            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12 text-center">
+                <h6>South African ID Number</h6>
+                <h6 style="font-size: 3em !important;">{{ view.identification.IdNumber }}</h6>
+            </div>
+
+            <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+                <div ng-if="view.identification.Valid" class="alert alert-success"> <span class="glyphicon glyphicon-ok"></span> This ID Number is VALID! </div>
+                <div ng-if="!view.identification.Valid" class="alert alert-danger"> <span class="glyphicon glyphicon-ok"></span> This ID Number is INVALID! </div>
+            </div>
+
+        </div>
+
+        <div class="panel-footer">
+            <a class="btn btn-primary" href="#/home">Go back Home</a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+﻿<div>
+
+    <div class="text-center m-b-30">
+        <button class="btn btn-info" ng-click="home.generateId()">Generate a South African ID Number</button>
+    </div>
+
+    <hr />
+    <div style="margin-top: -30px;" class="col-md-12 col-sm-12 col-xs-12 col-lg-12 text-center">
+        <span style="background: #fff; padding: 6px;">OR</span>
+    </div>
+
+    <div class="text-center m-t-30">
+        <div class="row">
+            <div class="form-group col-sm-offset-4 col-sm-4">
+                <input type="text" style="max-width: 100% !important;" maxlength="13" min="13" class="form-control text-center" ng-model="home.id_number" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group">
+                <a class="btn btn-primary" href="#/view/{{home.id_number}}">Verify ID Number</a>
+            </div>
+        </div>
+        
+    </div>
+</div>
